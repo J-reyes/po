@@ -6,9 +6,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <Login />
-        </header>
+        <Switch>
+         <Route exact path="/" component={Login}/>
+         <Route path="/register" component={Register} />
+         <Route path="/home" component={Home}/>
+        </Switch>
       </div>
     );
   }

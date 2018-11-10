@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import Login from './components/login';
-import Register from './components/register';
-import Home from './components/home';
-
-import {Link, Switch, Route } from 'react-router-dom';
+import Login from './components/login'
 import './App.css';
 
 class App extends Component {

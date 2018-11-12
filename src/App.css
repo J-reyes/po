@@ -11,15 +11,45 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(1px + 2vmin);
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.card {
+  
+}
+
+.card-link {
+  background-color: cadetblue;
+  border-radius: 5%;
+  
+}
+
+#user-label {
+  padding-right: 115px;
+}
+
+#password-label {
+  padding-right: 130px;
+}
+
+#sign-in-text {
+  text-align: center;
+}
+
+#register-text {
+  text-align: center;
+}
+
+#login-container {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  height: 300px;
+  width: 300px;
+  display: flex;
 }
 
 @keyframes App-logo-spin {

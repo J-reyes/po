@@ -16,10 +16,9 @@ var userSchema = new Schema({
         type: String,
         required: true
     },
-    pokemon: {
-        type: String,
-        required: false
-    }
+    pokemons: [{
+        type: Schema.Types.ObjectId, ref: "pokemon"
+    }]
 });
 
 var User = mongoose.model('user', userSchema);

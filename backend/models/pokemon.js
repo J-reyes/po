@@ -17,3 +17,6 @@ var pokemonSchema = new Schema({
     required: true
   }
 })
+
+var Pokemon = mongoose.model('pokemon', pokemonSchema);
+module.exports = { Pokemon, pokemonSchema}

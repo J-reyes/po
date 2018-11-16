@@ -13,6 +13,26 @@ const index =  async (req, res) => {
     }
 }
 
+const getById = (req, res) => {
+    User.findById(req.params.id)((err, user) => {
+         if(user == null) {
+             res.status(404).json({ message : "User not found"});
+         } else {
+             res.json(user);
+         }
+    })
+}
+
+const destroy = (req, res) => {
+    User.findByIdAndDelete(req.params.id, (err, user) => {
+        if (!user) {
+            res.status(404).json({ Message: 'User not found'});
+        } else { 
+            res.json(user);
+        }
+    })
+}
+
 // create a new user
 const createUser = async (req, res) => {
     try {
@@ -24,4 +44,4 @@ const createUser = async (req, res) => {
     }
 } 
 
-module.exports = { index, createUser }
+module.exports = { index, createUser, getById, destroy }

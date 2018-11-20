@@ -9,9 +9,15 @@ const userController = require('../controllers/user-controller');
 router.get('/', userController.index);
 router.get('/userid/:id', userController.getById)
 
+
 router.delete('/:id', userController.destroy);
 
 // post new user
 router.post('/new', userController.createUser);
+
+
+//======================TEST==================
+router.get('/test', userController.test)
+//===========================================
 
 module.exports = router;

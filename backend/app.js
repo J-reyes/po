@@ -47,4 +47,7 @@ app.listen(8000, (x)=>{
 //server port
 app.listen(8000, () => console.log("================Server listening on port 8000=============="))
 
+//server port
+app.listen(8000, () => console.log("================Server listening on port 8000=============="))
+
 module.exports = app;

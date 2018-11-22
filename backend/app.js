@@ -19,6 +19,7 @@ var mongomorgan = require("mongo-morgan");
 
 // Routers
 var userRouter = require("./routes/users");
+var pokemonRouter = require('./routes/pokemon');
 
 
 var app = express();
@@ -37,6 +38,14 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // API Routes
 app.use("/users", userRouter);
+app.use('/pokemons', pokemonRouter);
+
+app.listen(8000, (x)=>{
+  console.log('listening on port 8000')
+})
+
+//server port
+app.listen(8000, () => console.log("================Server listening on port 8000=============="))
 
 //server port
 app.listen(8000, () => console.log("================Server listening on port 8000=============="))

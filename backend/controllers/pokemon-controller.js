@@ -1,4 +1,4 @@
-let { Pokemon } = require('../models/pokemon-controller');
+let { Pokemon } = require('../models/pokemon');
 
 const index = async (req, res) => {
   try {
@@ -34,4 +34,4 @@ const createPokemon = async ( req, res ) => {
   }
 }
 
-module.exports = { index, createPokemon, getById, destroy}
+module.exports = { index, createPokemon, getById, destroy }

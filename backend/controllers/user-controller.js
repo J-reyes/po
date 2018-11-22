@@ -44,4 +44,10 @@ const createUser = async (req, res) => {
     }
 } 
 
-module.exports = { index, createUser, getById, destroy }
+
+//============================TEST===================
+const test = (req,res)=>{
+    res.json({test:'test'})
+}
+//====================================================
+module.exports = { index, createUser, getById, destroy, test }

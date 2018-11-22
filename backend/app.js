@@ -18,6 +18,7 @@ var fs = require("fs");
 
 // Routers
 var userRouter = require("./routes/users");
+var pokemonRouter = require('./routes/pokemon');
 
 
 var app = express();
@@ -35,5 +36,10 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // API Routes
 app.use("/users", userRouter);
+app.use('/pokemons', pokemonRouter);
+
+app.listen(8000, (x)=>{
+  console.log('listening on port 8000')
+})
 
 module.exports = app;

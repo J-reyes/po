@@ -1,12 +1,9 @@
 .register{
-  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+  background: -webkit-linear-gradient(left, #d61a2c, #dc5e6a);
   margin-top: 3%;
   padding: 3%;
 }
 
-img {
-  mix-blend-mode: multiply;
-}
 .register-left{
   text-align: center;
   color: #fff;
@@ -25,24 +22,21 @@ img {
   cursor: pointer;
 }
 .register-right{
-  background: #f8f9fa;
+  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
   border-top-left-radius: 10% 50%;
   border-bottom-left-radius: 10% 50%;
 }
 .register-left img{
   margin-top: 15%;
   margin-bottom: 5%;
-  width: 25%;
+  width: 100%;
   -webkit-animation: mover 2s infinite  alternate;
   animation: mover 1s infinite  alternate;
 }
-@-webkit-keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-20px); }
-}
+
 @keyframes mover {
   0% { transform: translateY(0); }
-  100% { transform: translateY(-20px); }
+  100% { transform: translateY(-80px); }
 }
 .register-left p{
   font-weight: lighter;
@@ -84,6 +78,11 @@ img {
 .register .nav-tabs .nav-link:hover{
   border: none;
 }
+
+img {
+  mix-blend-mode: multiply;
+}
+
 .register .nav-tabs .nav-link.active{
   width: 100px;
   color: #0062cc;

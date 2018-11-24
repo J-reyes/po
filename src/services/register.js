@@ -4,7 +4,7 @@ const validate = ( x ) =>
     && x.pass.length >= 8
 
 const addUser = data => {
-  return fetch('localhost:8000/user/new', {
+  return fetch('http://localhost:8000/users/new', {
     method: "POST",
     mode: "cors",
     cache: "no-cache",

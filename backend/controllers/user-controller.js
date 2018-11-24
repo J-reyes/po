@@ -36,6 +36,7 @@ const destroy = (req, res) => {
 // create a new user
 const createUser = async (req, res) => {
     try {
+        
         const user = await User.create(req.body)
         // return newly created user
         res.json(user);

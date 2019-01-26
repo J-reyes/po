@@ -14,7 +14,7 @@ const addUser = data => {
     referrer: "no-referrer",
     body: JSON.stringify(data),
 })
-.then(response => response.json())
+.then(response => console.log(response.json()))
 .catch( err => alert('Something went wrong with adding user in the server'))
 }
 
